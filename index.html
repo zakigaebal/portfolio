@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daeyeol Choi</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software engineer Ellie"
+    />
+    <meta name="author" content="Daeyeol" />
+    <link rel="icon" type="image/png" href="imgs/choi.jpg" />
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">어떤일이든 의미가 있다</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li> -->
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="imgs/avatar.png"
+          alt="Ellie's profile photo"
+          class="home__avatar"/> 
+        <h1 class="home__title">밝게 빛나는 별이 되고싶은</h1>
+        <h2 class="home__description">
+          제 이름은 최대열 입니다
+        </h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+       <h1>My work</h1>
+       <h3>Projects</h3>
+       <div class="work__categories">
+         <button class="category__btn selected" data-filter="*">
+           All <span class="category__count">8</span>
+         </button>
+         <button class="category__btn" data-filter="front-end">
+           1 <span class="category__count">3</span>
+         </button>
+         <button class="category__btn" data-filter="back-end">
+           2 <span class="category__count">2</span>
+         </button>
+         <button class="category__btn" data-filter="mobile">
+           3 <span class="category__count">3</span>
+         </button>
+       </div>
+       <div class="work__projects">
+         <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f9a6973f-5508-45b5-b4d6-404f616bf7c7/VER3_%281%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201105T153055Z&X-Amz-Expires=86400&X-Amz-Signature=460cbc14c8b92aaf41fd12c78a198d91ef20c62cac1a577f9d255ab96538b272&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EC%259D%25B4%25EB%25A0%25A5%25EC%2584%259C.pdf%22"
+         class="project"
+           data-type="front-end"
+           target="blank"
+         >
+           <img
+             src="imgs/projects/resume2.png"
+             alt="resume"
+             class="project__img"
+           />
+           <div class="project__description">
+             <h3>이력서PDF</h3>
+             <span>이력서 PDF 보기</span>
+           </div>
+         </a>
+         <a
+           href="https://www.notion.so/cbdccc3f8b8046348cecf1bc568464fe"
+           class="project"
+           data-type="front-end"
+           target="blank"
+         >
+           <img
+             class="project__img"
+             src="imgs/projects/nupl.png"
+             alt="navbar"
+           />
+           <div class="project__description">
+             <h3>랜딩페이지 제작경험</h3>
+             <span>MVP도출</span>
+           </div>
+         </a>
+         <a
+           href="https://www.notion.so/6bcb89220e6b49e5989fd0488fe44144"
+           class="project"
+           data-type="front-end"
+           target="blank"
+         >
+           <img class="project__img" src="imgs/projects/intro.png" alt="navbar" />
+           <div class="project__description">
+             <h3>자기소개사이트</h3>
+             <span>자기소개 사이트 제작</span>
+           </div>
+         </a>
+         <a href="https://www.notion.so/AR-c358d352fd294ea7a1d124d34793543b" class="project" data-type="back-end">
+           <img class="project__img" src="imgs/projects/arfilter.PNG" alt="" />
+           <div class="project__description">
+             <h3>인스타그램AR필터제작</h3>
+             <span>인스타그램AR광고가능성확인</span>
+           </div>
+         </a>
+         <a href="https://www.notion.so/USP-312a87fd3957433389ebbdbb49108dff" class="project" data-type="back-end">
+           <img class="project__img" src="imgs/projects/USP.PNG" alt="" />
+           <div class="project__description">
+             <h3>제품USP파악</h3>
+             <span>제품usp파악의 중요성</span>
+           </div>
+         </a>
+         <a href="https://www.notion.so/67aafe2eed0545f9bae262864426cd29" class="project" data-type="mobile">
+           <img class="project__img" src="imgs/projects/adreport.PNG" alt="" />
+           <div class="project__description">
+             <h3>광고보고서</h3>
+             <span>광고보고서</span>
+           </div>
+         </a>
+         <a href="https://www.notion.so/8d38de371ccd4c8dba8455aca8e50a00" class="project" data-type="mobile">
+           <img class="project__img" src="imgs/projects/adexperience.PNG" alt="" />
+           <div class="project__description">
+             <h3>광고매체경험</h3>
+             <span>광고매체경험</span>
+           </div>
+         </a>
+         <a href="https://www.notion.so/0d21044017b74d4fb734d6973c7788c9" class="project" data-type="mobile">
+           <img class="project__img" src="imgs/projects/introduce.PNG" alt="" />
+           <div class="project__description">
+             <h3>자기소개서</h3>
+             <span>자기소개서</span>
+           </div>
+         </a>
+       </div>
+      </div>
+     </section>
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <div class="about__me">
+      <h1>About me</h1>
+      <p>
+        마케터는 끊임없이 배워야하는 직무라고 생각하여 계속 성장하기위해 노력하고 있습니다😄
+      </p>
+    </div>
+      <!-- <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">스터디</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript,
+            <br />Google Analytics, Google tag manager
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">광고</h2>
+          <p class="major__description">
+            Facebook, Instagram,
+            <br />Naver, Kakao, Google
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">협업툴</h2>
+          <p class="major__description">
+            Slack, Notion,
+            <br />Trello, Miro
+          </p>
+        </div>
+      </div> -->
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/cp3.png"
+            alt="mediance"
+            class="job__logo"
+          />
+         <div class="job__description">
+          <p class="job__name">
+            (미디언스)퍼포먼스마케터-플래너
+          </p>
+          <p class="job__period">2020.09 - 2020.10</p>
+         </div>
+        </div>
+        <div class="job">
+          <img
+            src="imgs/jobs/cp3.png"
+            alt="mediance"
+            class="job__logo"
+          />
+         <div class="job__description">
+          <p class="job__name">
+            (미디언스)퍼포먼스마케터-기업협업프로젝트
+          </p>
+          <p class="job__period">2020.08 - 2020.09</p>
+         </div>
+        </div>
+        <div class="job">
+          <img
+            src="imgs/jobs/cp2.png"
+            alt="codestates"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">
+              (코드스테이츠)그로스마케팅부트캠프수강
+            </p>
+            <p class="job__period">2020.07 - 2020.08</p>
+           </div>
+      </div>
+        <div class="job">
+          <img
+            src="imgs/jobs/cp1.png"
+            alt="aseongon"
+            class="job__logo"
+          />
+         <div class="job__description">
+          <p class="job__name">
+            (아성온)지원사업PT,제품기획
+          </p>
+          <p class="job__period">2019.09 - 2020.01</p>
+         </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>디지털 광고도구/데이터및 출판도구/문서 및 디자인도구</h2>
+        <p>
+          저는 여러매체를 운영을 해보고 성과를 내는 사람이 되고 싶고 바람을 이루었을때 마케팅 전문가가 되고싶습니다
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Paid media</span>
+                <span></span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Owned media</span>
+                <span></span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>데이터분석</span>
+                <span></span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>FB/In Ads</span></li>
+                <li><span>Naver Ads</span></li>
+                <li><span>Google Ads</span></li>
+                <li><span>Kakao Ads</span></li>
+                <li><span>Owned media management</span></li>
+                <li><span>Google Analytics</span></li>
+                <li><span>Google tag manager</span></li>
+                <li><span>Visual Studio code</span></li>
+                <li><span>Github Desktop</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>시장조사</span></li>
+                <li><span>제품스터디</span></li>
+                <li><span>제품USP파악</span></li>
+                <li><span>광고보고서</span></li>
+                <li><span>html,css,js</span></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <!-- <section id="testimonials" class="section">
+   <div class="section__container">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img
+          src="imgs/testimonial/people1.jpg"
+          alt="People"
+          class="testimonial__avatar"
+        />
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            fuga libero nulla eveniet aperiam laborum, quis provident
+            quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+            explicabo tempora, dignissimos accusantium inventore ducimus!
+          </p>
+          <p class="name"><a href="">Ellie</a> / Samsung</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            fuga libero nulla eveniet aperiam laborum, quis provident
+            quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+            explicabo tempora, dignissimos accusantium inventore ducimus!
+          </p>
+          <p class="name"><a href="">Ellie</a> / Samsung</p>
+        </div>
+        <img
+        src="imgs/testimonial/people1.jpg"
+        alt="People"
+        class="testimonial__avatar"
+      />
+      </div>
+    </div>
+   </div>
+    </section> -->
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">읽어주셔서 감사합니다😎</h1>
+      <p class="contact__title">"마케터 최대열"의 긴 스토리를 들어주셔서 감사해요😃 
+        제가 더 궁금하시거나, 이야기를 나누고 싶으시다면
+        이 곳으로 연락 주세요!</p>
+      <h2 class="contact__email">📱 010-5711-7309 </h2>
+      <h2 class="contact__email"> ✉ maxiday05@gmail.com </h2>
+      <div class="contact__links">
+        <a href="https://www.instagram.com/1gachi/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://hanalrim.tistory.com" target="_blank">
+          <i class="fa fa-blog"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        2020 Growth marketer Daeyeol - All rights reserved
+      </p>
+    </section>
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
